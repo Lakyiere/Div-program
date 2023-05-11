@@ -7,9 +7,10 @@
     <title>Comment Form</title>
   </head>
   <body>
-    <h2 style="margin-left: 100px; margin-bottom: 30px">Comment Form</h2>
+    <div class="h2"><h2 style="margin-left: 100px; margin-bottom: 30px">Comment Form</h2></div>
 
-    <form action="">
+    <div class="div-form1">
+        <form action="">
       <label for="exampleFormControlInput1" class="form-label"
         >First Name</label
       >
@@ -44,10 +45,12 @@
       </button>
       <button class="submit" style="padding: 7px">Submit</button>
     </form>
-    <form action="">
+    </div>
+<div class="div-form2">
+        <form action="">
         <h3>
-            Select the programming languages you use most?
-        </h3><br>
+           1. Select the programming languages you use most?
+        </h3>
         <input
         class="form-check-input"
         style="margin-left: 30px"
@@ -98,6 +101,41 @@
       <label class="form-check-label" for="flexCheckDefault">
        C/C++
       </label>
+
+      <h3>
+       2. Which would you prefer?
+      </h3>
+      <input
+        class="form-check-input"
+        style="margin-left: 30px"
+        type="radio"
+        name="meal"
+        id="flexCheckDefault"
+      />
+      <label class="form-check-label" for="flexCheckDefault">
+      Breakfast
+      </label><br>
+      <input
+        class="form-check-input"
+        style="margin-left: 30px"
+        type="radio"
+        name="meal"
+        id="flexCheckDefault"
+      />
+      <label class="form-check-label" for="flexCheckDefault">
+       Brunch
+      </label><br>
+      <input
+        class="form-check-input"
+        style="margin-left: 30px"
+        type="radio"
+        name="meal"
+        id="flexCheckDefault"
+      />
+      <label class="form-check-label" for="flexCheckDefault">
+       Dinner
+      </label>
     </form>
+</div>
   </body>
 </html>
