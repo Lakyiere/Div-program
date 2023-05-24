@@ -1,5 +1,4 @@
-
-.boxes > div {
+/* .boxes > div {
   border: 2px solid #ffa94d;
   border-radius: 5px;
   background-color: #ffd8a8;
@@ -55,29 +54,45 @@
       "c d"
       "e e";
   }
-}
+} */
 
 /* styling the menu buttons */
-@media screen and (max-width: 700px){
-.menu{
+@media screen and (max-width: 700px) {
+ 
+  ul {
+    margin: 0%;
+    padding-left: 0px;
+  }
+  ul a {
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  .icons {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+    width: 95%;
+    color: black;
+    border-radius: 2px;
+  }
+  .brandname {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .menu{
+    height: 4rem;
+    
+  }
+.icons:hover{
+    background-color: rgb(3, 10, 0);
+    color: white;
+    border-radius: 2px;
+}
+.name{
     display: flex;
 }
-ul a{
-    text-decoration: none;
-    justify-content: stretch;
-    grid-row: auto;
+.drop{
+    justify-content: left;
 }
-.icons{
-    border: 2px solid #ffa94d;
-    border-color: black;
-    padding: 1rem 3.5rem 1rem 4rem;
-    border-style: 2px 5px 2px 5px;
-    align-items: center;
-    float: none;
-    justify-content: space-evenly;
-}
-/* .icons:hover{
-    background-color: aliceblue;
-    color: #d9480f;
-} */
 }
