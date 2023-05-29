@@ -103,9 +103,11 @@
   }
   .navicons1 {
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     padding-bottom: 1rem;
     padding-right: 4rem;
+    height: 80px;
+    padding-top: 1.5rem;
   }
   .home1 {
     margin-right: 2rem;
@@ -130,8 +132,7 @@
   .brand {
     font-size: 20px;
     font-weight: bold;
-    padding-left: 3rem;
-    padding-top: 0.5rem;
+    text-align: right;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 772px) {
@@ -140,9 +141,21 @@
     justify-content: space-around;
     padding-top: 2rem;
   }
-  a{
+  a {
     text-decoration: none;
+  }
+  .nav2 {
+    display: flex;
     justify-content: space-between;
   }
-
+  .home2 {
+    padding-right: 2rem;
+  }
+  .about2 {
+    padding-right: 2rem;
+  }
+  .brand1 {
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
