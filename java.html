@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="java.css" />
+    <title>java</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="enteryspace">
+        <input type="text" class="enteryspace1" id="calInput" />
+      </div>
+      <div class="buttons" id="buttons">
+        <button class="one" id="one">1</button>
+        <button class="two" id="two">2</button>
+        <button class="three" id="three">3</button>
+        <button class="plus" id="plus">+</button>
+        <button class="four" id="four">4</button>
+        <button class="five" id="five">5</button>
+        <button class="six" id="six">6</button>
+        <button class="minus" id="minus">-</button>
+        <button class="seven" id="seven">7</button>
+        <button class="eight" id="eight">8</button>
+        <button class="nine" id="nine">9</button>
+        <button class="mul" id="mul">*</button>
+        <button class="zero" id="zero">0</button>
+        <button class="equal" id="equal">=</button>
+        <button class="div" id="div">/</button>
+      </div>
+    </div>
+
+    <script>
+
+      const calInput = document.querySelector("#calInput");
+
+      const addholder = document.querySelector("#add");
+      const minusholder = document.querySelector("#minus");
+      const mulholder = document.querySelector("#mul");
+      const divholder = document.querySelector("#div");
+
+      const equalholder = document.querySelector("#equal");
+
+      addholder.addEventListener('click',function(){
+        ops = '+'
+        valueA = new Number(calInput.value)
+        calInput.focus()
+      })
+      addholder.addEventListener('click',function(){
+        ops = '-'
+        valueA = new Number(calInput.value)
+        calInput.focus()
+      })
+      addholder.addEventListener('click',function(){
+        ops = '*'
+        valueA = new Number(calInput.value)
+        calInput.focus()
+      })
+      addholder.addEventListener('click',function(){
+        ops = '/'
+        valueA = new Number(calInput.value)
+        calInput.focus()
+      })
+
+      equalholder.addEventListener('click',function(){
+        valueB = new Number(calInput.value)
+
+        if(ops == '+'){
+          valueC = valueA + valueB
+        }
+        else if(ops == '-'){
+          valueC = valueA + valueB
+        }
+         else if(ops == '*'){
+          valueC = valueA * valueB
+        }
+        else{
+          valueC = valueA / valueB
+        }
+        valueA = 0
+        valueB = 0
+        calInput.valueC
+      })
+    </script>
+  </body>
+</html>

@@ -92,7 +92,7 @@
     margin: 0.8rem;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 451px) {
+@media screen and (min-width: 600px) {
   a {
     text-decoration: none;
     color: white;
@@ -113,20 +113,20 @@
     margin-right: 2rem;
     padding: 1rem;
     background-color: red;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 15px;
   }
   .about1 {
     margin-right: 2rem;
     padding: 1rem;
     background-color: red;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 15px;
   }
   .contact1 {
     padding: 1rem;
     background-color: red;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 15px;
   }
   .brand {
@@ -135,11 +135,16 @@
     text-align: right;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 772px) {
+@media screen and (min-width: 768px) {
   .navicons2 {
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
+     padding-bottom: 1rem;
+    padding-right: 4rem;
+    height: 80px;
+    box-shadow: 0px 0px 2px 0.2px;
+    margin: 0.5rem;
   }
   a {
     text-decoration: none;

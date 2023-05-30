@@ -1,0 +1,71 @@
+.container{
+    margin-left: 500px;
+    margin-top: 60px;
+    height: 500px;
+    width: 200px;
+    box-sizing: 0px 1px 1px 2px;
+    border-color: aqua;
+    box-shadow: 10px;
+    
+}
+.enteryspace1{
+    height: 50px ;
+    width: 420px;
+}
+.buttons{
+    padding-top: 2rem;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-template-areas:
+      "a b c d"
+      "e f g h"
+      "i j k m"
+      "n o o p";
+}
+.one{
+    grid-area: a;
+}
+.two{
+    grid-area: b;
+}
+.three{
+    grid-area: c;
+}
+.plus{
+    grid-area: d;
+}
+.four{
+    grid-area: e;
+}
+.five{
+    grid-area: f;
+}
+.six{
+    grid-area: g;
+}
+.minus{
+    grid-area: h;
+}
+.seven{
+    grid-area: i;
+}
+.eight{
+    grid-area: j;
+}
+.nine{
+    grid-area: k;
+}
+.mul{
+    grid-area: m;
+}
+.zero{
+    grid-area: n;
+}
+.equal{
+    grid-area: o;
+}
+.div{
+    grid-area: p;
+}
