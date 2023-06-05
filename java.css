@@ -15,6 +15,7 @@
   padding-top: 2rem;
   display: grid;
   gap: 0.5rem;
+  font-size: 20px;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
   grid-template-areas:
@@ -67,4 +68,17 @@
 }
 .div {
   grid-area: p;
+}
+
+.inputbox{
+  height: 20px;
+  width: 200px;
+}
+.tableentry {
+  height: 60px;
+  width: 450px;
+}
+.submitbtn{
+  padding: 5px;
+  background-color: burlywood;
 }

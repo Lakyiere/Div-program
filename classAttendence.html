@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="java.css" />
+    <title>ClassAttendance</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      class="inputbox"
+      id="searchInput"
+      placeholder="type to search"
+    />
+    <button class="submitbtn" id="submitbtn">Submit</button>
+    <table id="attendance" class="tableentry">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Present</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script>
+      function attendance() {
+        let mates = [
+          { name: "Alice", age: 24, present: true },
+          { name: "julitta", age: 8, present: true },
+          { name: "Agnes", age: 18, present: false },
+          { name: "Azeeza", age: 8, present: true },
+          { name: "Rita", age: 38, present: true },
+          { name: "Victoria", age: 25, present: true },
+          { name: "Trice", age: 18, present: true },
+          { name: "Tewea", age: 20, present: true },
+          { name: "Asabea", age: 10, present: false },
+          { name: "Michelle", age: 43, present: false },
+        ];
+        function populateTable(records) {
+          const tableBody = document.querySelector("#attendance tbody");
+          let rows = "";
+          records.forEach(function (mate) {
+            rows += `<tr><td>${mate.name}</td><td>${mate.age}</td><td>${mate.present}</td></tr>`;
+          });
+          tableBody.innerHTML = rows;
+        }
+        populateTable(mates);
+    
+      
+      let matesnames;
+      let searchInput = document.querySelector("#searchInput");
+      let submitbtn = document.querySelector("#submitbtn");
+
+      submitbtn.addEventListener("click", function (mate) {
+        mate.preventDefault()
+        const inputname = mate.target[0].value;
+        
+          if (inputname) {
+            const matesnames = mates.filter(function (mate) {
+           return mate.name.toLowerCase().includes(inputname).toLowerCase();
+          
+        });
+        populateTable(matesnames);
+      } else{
+populateTable(mates);
+      }});
+        }
+       
+        attendance();
+         
+    </script>
+  </body>
+</html>
