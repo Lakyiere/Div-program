@@ -32,6 +32,40 @@
     </div>
 
     <script>
+    {
+        "name": "Lakyiere Alice",
+        "age": 23
+      //   'class': "F",
+      //   'Phonenumber': "0202860249",
+      //  ' address': "Kasoa",
+      }
+
+      const x = {};
+      x["foo"] = "bar";
+      x.bar = {
+        first: 100,
+        second: 200,
+      };
+      console.log(x.bar["first"] + x["bar"].second);
+
+      const student = {
+        'name': "Lakyiere Alice",
+        'age': 23,
+        'class': "F",
+        'Phonenumber': "0202860249",
+       ' address': "Kasoa",
+      };
+      console.log(Object.keys(student));
+
+      for (const property in student) {
+        console.log(`${property} = ${student[property]}`);
+      }
+
+      let valueA = 0;
+      let valueB = 0;
+      let valueC = 0;
+      ops = " ";
+
       const calInput = document.querySelector("#calInput");
 
       const addholder = document.querySelector("#add");
