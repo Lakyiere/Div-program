@@ -32,13 +32,39 @@
     </div>
 
     <script>
-    {
-        "name": "Lakyiere Alice",
-        "age": 23
-      //   'class': "F",
-      //   'Phonenumber': "0202860249",
-      //  ' address': "Kasoa",
+    let mates = [
+      {
+        name:"Alicel",
+        age: 24,
+        present:true
+      },
+       {
+        name:"julitta",
+        age: 8,
+        present:true
+      },
+       {
+        name:"Agnes",
+        age: 18,
+        present:false
       }
+    ]
+
+    let matesPresent
+
+    matesPresent=mates.filter(function(mate){
+      if((mate.present && mate.age < 20) || mate.name.length > 5){
+        return true
+      }
+    })
+    console.log(matesPresent)
+
+    matesPresent=mates.find(function(mate){
+      if((mate.present && mate.age < 20) || mate.name.length > 5){
+        return true
+      }
+    })
+    console.log(matesPresent)
 
       const x = {};
       x["foo"] = "bar";
