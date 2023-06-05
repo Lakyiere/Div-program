@@ -93,7 +93,7 @@
     margin: 0.8rem;
   }
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
   ul a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -119,6 +119,7 @@
     height: 4rem;
     box-shadow: 0px 1px 2px lightgray;
     width: 100%;
+    /* background-color: aqua; */
   }
 
   .home1 {
@@ -148,10 +149,19 @@
     font-weight: bolder;
   }
 }
+
 @media screen and (min-width: 768px) {
+  .menu {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    box-shadow: 0px 1px 2px lightgray;
+    width: 100%;
+  }
   ul a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(85, 3, 3);
   }
   ul {
     display: flex;
@@ -163,47 +173,103 @@
   }
   .brandname {
     font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .icons {
+    background-color: none;
+  }
+
+  .home1 {
+    background-color:white;
+    margin-right: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 15px;
     font-weight: bold;
   }
-  .menu1 {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-around;
+  .disappear {
+    display: inline;
+  }
+  .about1 {
+
+    margin-right: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: white;
+    font-weight: bold;
+  }
+  .contact1 {
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: white;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 889px) {
+  ul {
+    display: block;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    height: 550px;
+    box-shadow: 0px 1px 2px #000;
+    text-align: center;
+  }
+  ul a {
+    display: block;
+    color: #000;
+    /* padding: 8px 16px; */
+    text-decoration: none;
+    box-shadow: #000;
+  }
+  ul a:hover {
+    background-color: #555555;
+    color: white;
+  }
+  .name {
     height: 4rem;
     box-shadow: 0px 1px 2px lightgray;
     width: 100%;
   }
-  /* .menu {
+  .menu {
     height: 4rem;
+    width: 100%;
+    display: block;
   }
-  .navicons2 {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    padding-right: 4rem;
-    height: 80px;
-    box-shadow: 0px 0px 2px 0.2px;
-    margin: 0.5rem;
+  .brandname {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-size: 30px;
   }
-  a {
-    text-decoration: none;
-  }
-  .nav2 {
-    display: flex;
-    justify-content: space-between;
-  }
-  .home2 {
-    padding-right: 2rem;
-  }
-  .about2 {
-    padding-right: 2rem;
-  }
-  .brand1 {
-    font-size: 15px;
-    font-weight: bold;
-  } */
-}
 
-@media screen and (min-width: 889px) {
+  .about1 {
+    margin-right: 0;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: white;
+    border: 0.005rem solid;
+    border-radius: 0%;
+  }
+  .home1 {
+    margin-right: 0;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: white;
+    font-weight: bold;
+    border: 0.005rem solid;
+    border-radius: 0%;
+  }
+  .contact1 {
+    border: 0.005rem solid;
+    border-radius: 2px;
+    background-color: white;
+  }
 }
