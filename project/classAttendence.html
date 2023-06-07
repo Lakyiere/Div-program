@@ -16,14 +16,14 @@
     />
     <button class="submitbtn" id="submitbtn">Submit</button>
     <table id="attendance" class="tableentry">
-      <thead>
+      <thead id="thead">
         <tr>
           <th>Name</th>
           <th>Age</th>
           <th>Present</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody id="tbody"></tbody>
     </table>
 
     <script>
@@ -49,29 +49,29 @@
           tableBody.innerHTML = rows;
         }
         populateTable(mates);
-    
-      
-      let matesnames;
-      let searchInput = document.querySelector("#searchInput");
-      let submitbtn = document.querySelector("#submitbtn");
 
-      submitbtn.addEventListener("click", function (mate) {
-        mate.preventDefault()
-        const inputname = mate.target[0].value;
-        
+  
+
+        let matesnames;
+        let searchInput = document.querySelector("#searchInput");
+        let tbody = document.querySelector("#tbody");
+        let thead= document.querySelector("#thead");
+        let submitbtn = document.querySelector("#submitbtn");
+
+        submitbtn.addEventListener("click", function (e) {
+          // mate.preventDefault();
+          const inputname = submitbtn.value;
+
           if (inputname) {
             const matesnames = mates.filter(function (mate) {
-           return mate.name.toLowerCase().includes(inputname).toLowerCase();
-          
+              return mate.name.toLowerCase().includes(inputname.toLowerCase());
+            });
+            attendance(matesnames);
+          }
         });
-        populateTable(matesnames);
-      } else{
-populateTable(mates);
-      }});
-        }
-       
-        attendance();
-         
+      }
+attendance()
+      
     </script>
   </body>
 </html>

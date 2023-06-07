@@ -58,6 +58,7 @@
 
 /* styling the menu buttons */
 
+
 @media screen and (max-width: 450px) {
   ul {
     margin: 0%;
@@ -148,6 +149,14 @@
     font-size: 15px;
     font-weight: bolder;
   }
+   .project1 {
+    margin-left: 2rem;
+    padding: 1rem;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: bolder;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -207,6 +216,14 @@
     background-color: white;
     font-weight: bold;
   }
+  .project1 {
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: white;
+    font-weight: bold;
+  }
 }
 
 @media screen and (min-width: 889px) {
@@ -217,7 +234,7 @@
     margin: 0;
     padding: 0;
     width: 250px;
-    height: 550px;
+    height: 580px;
     box-shadow: 0px 1px 2px #000;
     text-align: center;
   }
@@ -271,5 +288,11 @@
     border: 0.005rem solid;
     border-radius: 2px;
     background-color: white;
+  }
+  .project1{
+    border: 0.005rem solid;
+    border-radius: 2px;
+    background-color: white;
+    margin-left: 0;
   }
 }

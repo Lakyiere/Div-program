@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="java.css" />
-    <title>java</title>
-  </head>
-  <body>
-    <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculator.css" rel="stylesheet" />
+    <title>calculator</title>
+</head>
+<body>
+        <div class="container">
       <div class="enteryspace">
         <input type="text" class="enteryspace1" id="calInput" />
       </div>
@@ -32,71 +32,7 @@
     </div>
 
     <script>
-    let mates = [
-      {
-        name:"Alicel",
-        age: 24,
-        present:true
-      },
-       {
-        name:"julitta",
-        age: 8,
-        present:true
-      },
-       {
-        name:"Agnes",
-        age: 18,
-        present:false
-      }
-    ]
-
-    let matesPresent
-
-    matesPresent=mates.filter(function(mate){
-      if((mate.present && mate.age < 20) || mate.name.length > 5){
-        return true
-      }
-    })
-    console.log(matesPresent)
-
-    matesPresent=mates.find(function(mate){
-      if((mate.present && mate.age < 20) || mate.name.length > 5){
-        return true
-      }
-    })
-    console.log(matesPresent)
-
-
-let matesmultiple=mates.map(function(mate){
-      mate.age = mate.age*2
-      mate.name = mate.name.toUpperCase()
-        return mate
-     
-    })
-    console.log(matesmultiple)
-    
-      const x = {};
-      x["foo"] = "bar";
-      x.bar = {
-        first: 100,
-        second: 200,
-      };
-      console.log(x.bar["first"] + x["bar"].second);
-
-      const student = {
-        'name': "Lakyiere Alice",
-        'age': 23,
-        'class': "F",
-        'Phonenumber': "0202860249",
-       ' address': "Kasoa",
-      };
-      console.log(Object.keys(student));
-
-      for (const property in student) {
-        console.log(`${property} = ${student[property]}`);
-      }
-
-      let valueA = 0;
+        let valueA = 0;
       let valueB = 0;
       let valueC = 0;
       ops = " ";
@@ -147,6 +83,7 @@ let matesmultiple=mates.map(function(mate){
         valueB = 0;
         calInput.value = valueC;
       });
+      calInput.value
     </script>
-  </body>
+</body>
 </html>

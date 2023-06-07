@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cedisconverter</title>
+</head>
+<body>
+    <h2>Cedis to Dollars Converter</h2>
+    <div class="sumtable">
+        <label for="" class="labelnames">Amount in Cedis</label>
+    <input type="text" class="inputs" id="input1" />
+    <!-- <label for="" class="labelnames">Amount in Dollard</label>
+    <input type="text" class="inputs" id="input2" /> -->
+    <br /><br />
+    <label for="" class="labelnames">Amount in Dollars</label>
+    <input type="text" class="results" id="equal" />
+    <br><br>
+    <input type="button" class="btn" value="calculate" onclick="addNumber()" />
+    </div>
+<hr>
+ <h2>Cedis to Dollars Converter with Rate</h2>
+    <div class="sumtable">
+        <label for="" class="labelnames">Amount in Cedis</label>
+    <input type="text" class="inputs" id="input11" />
+    <label for="" class="labelnames">Rate</label>
+    <input type="text" class="inputs" id="input22" />
+    <br /><br />
+    <label for="" class="labelnames">Amount in Dollars</label>
+    <input type="text" class="results" id="equal1" />
+    <br><br>
+    <input type="button" class="btn" value="calculate" onclick="add()" />
+    </div>
+
+
+    <script>
+              function addNumber() {
+        var valueA = parseInt(document.getElementById("input1").value);
+        // var valueB = parseInt(document.getElementById("input2").value);
+
+        var valueC = valueA * 11.23;
+
+        document.getElementById("equal").value = valueC;
+      }
+
+      function add() {
+        var valueA = parseInt(document.getElementById("input11").value);
+        var valueB = parseInt(document.getElementById("input22").value);
+
+        var valueC = valueA * valueB;
+
+        document.getElementById("equal1").value = valueC;
+      }
+    </script>
+</body>
+</html>

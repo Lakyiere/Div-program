@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum</title>
+    <style>
+
+        h2{
+            text-align: center;
+            padding: 2rem;
+        }
+.labelnames{
+    font-size: 20px;
+}
+.sumtable{
+    margin-left: 5rem;
+    box-sizing: 1px 2px 2px grey;
+    
+}
+.inputs{
+    width: 300px;
+    height: 25px;
+    margin-left: 20px;
+    
+}
+.btn{
+    width: 100px;
+    height: 25px;
+    margin-left: 350px;
+}
+.results{
+ width: 727px;
+    height: 30px;
+    margin-left: 20px;
+    
+}
+
+    </style>
+  </head>
+  <body>
+    <h2>Sum of two numbers</h2>
+    <div class="sumtable">
+        <label for="" class="labelnames">Number1</label>
+    <input type="text" class="inputs" id="input1" />
+    <label for="" class="labelnames">Number2</label>
+    <input type="text" class="inputs" id="input2" />
+    <br /><br />
+    <label for="" class="labelnames">Results</label>
+    <input type="text" class="results" id="equal" />
+    <br><br>
+    <input type="button" class="btn" value="Add" onclick="addNumber()" />
+    </div>
+
+    <script>
+      function addNumber() {
+        var valueA = parseInt(document.getElementById("input1").value);
+        var valueB = parseInt(document.getElementById("input2").value);
+
+        var valueC = valueA + valueB;
+
+        document.getElementById("equal").value = valueC;
+      }
+    </script>
+  </body>
+</html>

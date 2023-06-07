@@ -1,0 +1,56 @@
+.container{
+    display: block;
+    margin: auto;
+    
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 12rem;
+}
+.search{
+   margin-left: 2rem;
+    height: 70px;
+    width: 400px;
+   box-shadow:  1px 1px 4px 2px lightgray; 
+   border-radius: 5px; 
+}
+.textbox{
+    height: 30px;
+    width: 200px;
+    margin-left: 2rem;
+    border-radius: 1px;
+}
+.addbtn{
+    padding: 5px 10px 5px 10px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.taskcontainer{
+    height: 500px;
+    width: 400px;
+   box-shadow: 1px 1px 4px 2px lightgray; 
+   margin-left: 2rem;
+}
+.task1{
+    margin-left: 2rem;
+    height: 70px;
+    width: 328px;
+   box-shadow:  1px 1px 4px 2px lightgray; 
+   border-radius: 5px;
+}
+.check{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.texttask{
+    margin-left: 1.5rem;
+}
+.exitbutton{
+    margin-left: 8rem;
+}
