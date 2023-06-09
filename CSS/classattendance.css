@@ -1,0 +1,29 @@
+.container{
+     margin-left: 2rem;
+  box-shadow: 0.5px 0.5px 0.5px 1px gray;
+  height: 400px;
+  width: 650px;
+  padding: 20px;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+table{
+padding: 10px;
+width: 600px;
+text-align: center;
+}
+th{
+    background-color: aliceblue;
+}
+.inputbox{
+    width: 500px;
+    height: 30px;
+}
+.submitbtn{
+    width: 100px;
+    height: 35px;
+    background-color: aqua;
+    border-radius: 5px;
+}

@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="java.css" />
+     <link rel="stylesheet" href="/css/classattendance.css" />
+    <script src="/JS/projects.js"></script>
     <title>ClassAttendance</title>
   </head>
   <body>
-    <input
+    <div class="container">
+      <h2>Class Attendance List</h2>
+      <input
       type="text"
       class="inputbox"
       id="searchInput"
@@ -25,6 +28,7 @@
       </thead>
       <tbody id="tbody"></tbody>
     </table>
+    </div>
 
     <script>
       function attendance() {
@@ -40,7 +44,7 @@
           { name: "Asabea", age: 10, present: false },
           { name: "Michelle", age: 43, present: false },
         ];
-        function populateTable(records) {
+        function populateTable(mate) {
           const tableBody = document.querySelector("#attendance tbody");
           let rows = "";
           records.forEach(function (mate) {
@@ -64,7 +68,7 @@
 
           if (inputname) {
             const matesnames = mates.filter(function (mate) {
-              return mate.name.toLowerCase().includes(inputname.toLowerCase());
+              return mate.name.toLowerCase().includes(searchBox)
             });
             attendance(matesnames);
           }
