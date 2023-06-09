@@ -11,9 +11,14 @@
     <div class="container">
       <p class="title">ToDo List</p>
       <div class="search">
-        <input type="text" placeholder="Task to do..." class="textbox" />
+        <input
+          type="text"
+          placeholder="Task to do..."
+          class="textbox"
+          id="textbox"
+        />
 
-        <input type="button" value=" Add" class="addbtn" />
+        <input type="button" value=" Add" class="addbtn" id="addbtn" />
       </div>
       <br />
       <div class="taskcontainer">
@@ -31,23 +36,44 @@
         </div>
         <br />
         <div class="task1">
-          <input type="checkbox" class="check" />
+          <input type="checkbox" class="check" id="check" />
           <label for="" class="texttask">Task3</label>
           <input type="button" value="Exit" class="exitbutton" />
         </div>
         <br />
         <div class="task1">
-          <input type="checkbox" class="check" />
+          <input type="checkbox" class="check" id="check" />
           <label for="" class="texttask">Task4</label>
           <input type="button" value="Exit" class="exitbutton" />
         </div>
         <br />
         <div class="task1">
-          <input type="checkbox" class="check" />
+          <input type="checkbox" class="check" id="check" />
           <label for="" class="texttask">Task5</label>
           <input type="button" value="Exit" class="exitbutton" />
         </div>
       </div>
     </div>
+
+    <script>
+      var EntryBox = document.getElementById("textbox");
+      var toDoList = document.getElementById("addbtn");
+      function newToDoItem(itemText) {
+        var toDoItem = document.createElementbyClassName("task1");
+        var toDoText = document.createTextNode(itemText);
+        toDoItem.appendChild(toDoText);
+        toDoList.appendChild(toDoItem);
+        toDoItem.addEventListener("dblclick", toggleToDoItemState);
+      }
+
+      var close = document.getElementsByClassName("exitbutton");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+          var div = this.parentElement;
+          div.style.display = "none";
+        };
+      }
+    </script>
   </body>
 </html>

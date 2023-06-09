@@ -41,7 +41,7 @@
     margin-left: 2rem;
     height: 70px;
     width: 328px;
-   box-shadow:  1px 1px 4px 2px lightgray; 
+   box-shadow:  1px 1px 1px 1px lightgray; 
    border-radius: 5px;
 }
 .check{

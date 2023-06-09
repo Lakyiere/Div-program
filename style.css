@@ -58,7 +58,32 @@
 
 /* styling the menu buttons */
 
-
+.projects{
+  width: fit-content;
+  display: flex;
+  margin-left: 17rem;
+  gap: 1rem;
+  /* justify-content: space-around; */
+}
+.sumofnumbers{
+  padding: 20px;
+  margin-top: 1rem;
+  border: #555555;
+  background-color: rgb(192, 243, 243);
+  width: fit-content;
+  border-left: 10px solid rgb(255, 166, 0);
+}
+.title{
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.text{
+  font-size: 17px;
+}
+.sumofnumbers:hover { background-color: rgb(207, 195, 86);
+  color: aliceblue;
+}
 @media screen and (max-width: 450px) {
   ul {
     margin: 0%;
@@ -246,8 +271,8 @@
     box-shadow: #000;
   }
   ul a:hover {
-    background-color: #555555;
-    color: white;
+    background-color: rgb(216, 250, 250);
+
   }
   .name {
     height: 4rem;
@@ -296,3 +321,4 @@
     margin-left: 0;
   }
 }
+
